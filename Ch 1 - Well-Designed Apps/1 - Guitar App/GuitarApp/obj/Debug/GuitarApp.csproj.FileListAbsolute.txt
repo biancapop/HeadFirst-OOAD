@@ -1,0 +1,15 @@
+E:\Trabajo\Repos\HeadFirst-OOAD\Ch 1 - Well-Designed Apps\1 - Guitar App\GuitarApp\bin\Debug\GuitarApp.exe.config
+E:\Trabajo\Repos\HeadFirst-OOAD\Ch 1 - Well-Designed Apps\1 - Guitar App\GuitarApp\bin\Debug\GuitarApp.exe
+E:\Trabajo\Repos\HeadFirst-OOAD\Ch 1 - Well-Designed Apps\1 - Guitar App\GuitarApp\bin\Debug\GuitarApp.pdb
+E:\Trabajo\Repos\HeadFirst-OOAD\Ch 1 - Well-Designed Apps\1 - Guitar App\GuitarApp\obj\Debug\GuitarApp.csproj.AssemblyReference.cache
+E:\Trabajo\Repos\HeadFirst-OOAD\Ch 1 - Well-Designed Apps\1 - Guitar App\GuitarApp\obj\Debug\MainWindow.g.cs
+E:\Trabajo\Repos\HeadFirst-OOAD\Ch 1 - Well-Designed Apps\1 - Guitar App\GuitarApp\obj\Debug\App.g.cs
+E:\Trabajo\Repos\HeadFirst-OOAD\Ch 1 - Well-Designed Apps\1 - Guitar App\GuitarApp\obj\Debug\GuitarApp_MarkupCompile.cache
+E:\Trabajo\Repos\HeadFirst-OOAD\Ch 1 - Well-Designed Apps\1 - Guitar App\GuitarApp\obj\Debug\GuitarApp_MarkupCompile.lref
+E:\Trabajo\Repos\HeadFirst-OOAD\Ch 1 - Well-Designed Apps\1 - Guitar App\GuitarApp\obj\Debug\MainWindow.baml
+E:\Trabajo\Repos\HeadFirst-OOAD\Ch 1 - Well-Designed Apps\1 - Guitar App\GuitarApp\obj\Debug\GuitarApp.g.resources
+E:\Trabajo\Repos\HeadFirst-OOAD\Ch 1 - Well-Designed Apps\1 - Guitar App\GuitarApp\obj\Debug\GuitarApp.Properties.Resources.resources
+E:\Trabajo\Repos\HeadFirst-OOAD\Ch 1 - Well-Designed Apps\1 - Guitar App\GuitarApp\obj\Debug\GuitarApp.csproj.GenerateResource.cache
+E:\Trabajo\Repos\HeadFirst-OOAD\Ch 1 - Well-Designed Apps\1 - Guitar App\GuitarApp\obj\Debug\GuitarApp.csproj.CoreCompileInputs.cache
+E:\Trabajo\Repos\HeadFirst-OOAD\Ch 1 - Well-Designed Apps\1 - Guitar App\GuitarApp\obj\Debug\GuitarApp.exe
+E:\Trabajo\Repos\HeadFirst-OOAD\Ch 1 - Well-Designed Apps\1 - Guitar App\GuitarApp\obj\Debug\GuitarApp.pdb

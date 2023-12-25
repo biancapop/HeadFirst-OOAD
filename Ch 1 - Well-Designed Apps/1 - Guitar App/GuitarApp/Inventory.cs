@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace GuitarApp
 {
@@ -15,7 +11,7 @@ namespace GuitarApp
             guitars = new LinkedList<Guitar>();
         }
 
-        public void addGuitar(string serialNumber, double price, string builder, string model, string type, string backWood, string topWood)
+        public void addGuitar(string serialNumber, double price, Builder builder, string model, Type type, Wood backWood, Wood topWood)
         {
             Guitar guitar = new Guitar(serialNumber, price, builder, model, type, backWood, topWood);
             guitars.AddLast(guitar);
@@ -40,8 +36,8 @@ namespace GuitarApp
             {
                 // Ignore serial number since that's unique
                 // Ignore price since that's unique
-                string builder = searchGuitar.builder;
-                if ((builder != null) && (!builder.Equals("")) && (!builder.Equals(guitar.builder)))
+                Builder builder = searchGuitar.builder;
+                if (!builder.Equals(guitar.builder))
                 {
                     continue;
                 }
@@ -50,18 +46,18 @@ namespace GuitarApp
                 {
                     continue;
                 }
-                string type = searchGuitar.type;
-                if ((type != null) && (!searchGuitar.Equals("")) && (!type.Equals(guitar.type)))
+                Type type = searchGuitar.type;
+                if (!type.Equals(guitar.type))
                 {
                     continue;
                 }
-                string backWood = searchGuitar.backWood;
-                if ((backWood != null) && (!backWood.Equals("")) && (!backWood.Equals(guitar.backWood)))
+                Wood backWood = searchGuitar.backWood;
+                if (!backWood.Equals(guitar.backWood))
                 {
                     continue;
                 }
-                string topWood = searchGuitar.topWood;
-                if ((topWood != null) && (!topWood.Equals("")) && (!topWood.Equals(guitar.topWood)))
+                Wood topWood = searchGuitar.topWood;
+                if (!topWood.Equals(guitar.topWood))
                 {
                     continue;
                 }
