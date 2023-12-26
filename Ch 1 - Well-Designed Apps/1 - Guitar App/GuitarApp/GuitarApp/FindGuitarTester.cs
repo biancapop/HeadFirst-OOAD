@@ -6,7 +6,8 @@ namespace GuitarApp
     public class FindGuitarTester
     {
 
-        public static void testErin()
+
+        public void testErin()
         {
             // Set up Rick's guitar inventory
             Inventory inventory = new Inventory();
@@ -37,7 +38,7 @@ namespace GuitarApp
                 }
             }
         }
-        private static void initializeInventory(Inventory inventory)
+        private void initializeInventory(Inventory inventory)
         {
             // Add Guitars to the inventory ...
             inventory.addGuitar("V12345", 0, Builder.FENDER, "Stratocastor", Type.ELECTRIC, Wood.ALDER, Wood.ADIRONDACK);
