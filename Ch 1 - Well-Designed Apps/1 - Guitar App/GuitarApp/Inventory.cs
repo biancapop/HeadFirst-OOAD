@@ -29,9 +29,9 @@ namespace GuitarApp
             return null;
         }
 
-        public Guitar search(Guitar searchGuitar)
+        public List<Guitar> search(Guitar searchGuitar)
         {
-            Guitar matchingGuitar = null;
+            List<Guitar> matchingGuitars = new List<Guitar>();
             foreach (Guitar guitar in guitars)
             {
                 // Ignore serial number since that's unique
@@ -41,8 +41,8 @@ namespace GuitarApp
                 {
                     continue;
                 }
-                string model = searchGuitar.model;
-                if ((model != null) && (!model.Equals("")) && (!model.Equals(guitar.model)))
+                string model = searchGuitar.model.ToLower();
+                if ((model != null) && (!model.Equals("")) && (!model.Equals(guitar.model.ToLower())))
                 {
                     continue;
                 }
@@ -61,9 +61,9 @@ namespace GuitarApp
                 {
                     continue;
                 }
-                matchingGuitar = guitar;
+                matchingGuitars.Add(guitar);
             }
-            return matchingGuitar;
+            return matchingGuitars;
         }
     }
 }

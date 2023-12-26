@@ -23,6 +23,7 @@ namespace GuitarApp
         public MainWindow()
         {
             InitializeComponent();
+
         }
     }
 }

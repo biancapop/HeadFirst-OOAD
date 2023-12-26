@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace GuitarApp
 {
@@ -12,24 +13,28 @@ namespace GuitarApp
             initializeInventory(inventory);
 
             Guitar whatErinLikes = new Guitar("", 0, Builder.FENDER, "Stratocastor", Type.ELECTRIC, Wood.ALDER, Wood.ALDER);
-            Guitar guitar = inventory.search(whatErinLikes);
-            if (guitar != null)
-            {
-                string msgSuccess = "Erin, you might like this " +
-                    guitar.builder + " " + guitar.model + " " +
-                    guitar.type + " guitar:\n     " +
-                    guitar.backWood + " back and sides,\n   " +
-                    guitar.topWood + " top.\nYou can have it for only $" +
-                    guitar.price + "!";
-
-                Console.WriteLine(msgSuccess);
-                Console.ReadKey();
-            }
-            else
+            List<Guitar> guitars = inventory.search(whatErinLikes);
+            if (guitars.Count == 0)
             {
                 string msgFail = "Sorry, Erin, we have nothing for you.";
                 Console.WriteLine(msgFail);
                 Console.ReadKey();
+            }
+            else
+            {
+                foreach (Guitar guitar in guitars)
+                {
+                    string msgSuccess = "Erin, you might like this " +
+                        guitar.builder + " " + guitar.model + " " +
+                        guitar.type + " guitar:\n     " +
+                        guitar.backWood + " back and sides,\n   " +
+                        guitar.topWood + " top.\nYou can have it for only $" +
+                        guitar.price + "!";
+
+                    Console.WriteLine(msgSuccess);
+                    Console.ReadKey();
+
+                }
             }
         }
         private static void initializeInventory(Inventory inventory)
