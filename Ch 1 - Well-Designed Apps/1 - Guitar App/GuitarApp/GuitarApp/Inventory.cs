@@ -11,9 +11,10 @@ namespace GuitarApp
             guitars = new LinkedList<Guitar>();
         }
 
-        public void addGuitar(string serialNumber, double price, Builder builder, string model, Type type, Wood backWood, Wood topWood)
+        public void addGuitar(string serialNumber, double price, Builder builder, string model, Type type, Wood backWood, Wood topWood, int numString)
         {
-            Guitar guitar = new Guitar(serialNumber, price, builder, model, type, backWood, topWood);
+            GuitarSpec guitarSpec = new GuitarSpec(builder, model, type, backWood, topWood, numString);
+            Guitar guitar = new Guitar(serialNumber, price, guitarSpec);
             guitars.AddLast(guitar);
         }
 
@@ -29,39 +30,13 @@ namespace GuitarApp
             return null;
         }
 
-        public List<Guitar> search(Guitar searchGuitar)
+        public List<Guitar> search(GuitarSpec searchGuitarSpec)
         {
             List<Guitar> matchingGuitars = new List<Guitar>();
             foreach (Guitar guitar in guitars)
             {
-                // Ignore serial number since that's unique
-                // Ignore price since that's unique
-                Builder builder = searchGuitar.builder;
-                if (!builder.Equals(guitar.builder))
-                {
-                    continue;
-                }
-                string model = searchGuitar.model.ToLower();
-                if ((model != null) && (!model.Equals("")) && (!model.Equals(guitar.model.ToLower())))
-                {
-                    continue;
-                }
-                Type type = searchGuitar.type;
-                if (!type.Equals(guitar.type))
-                {
-                    continue;
-                }
-                Wood backWood = searchGuitar.backWood;
-                if (!backWood.Equals(guitar.backWood))
-                {
-                    continue;
-                }
-                Wood topWood = searchGuitar.topWood;
-                if (!topWood.Equals(guitar.topWood))
-                {
-                    continue;
-                }
-                matchingGuitars.Add(guitar);
+                if (guitar.guitarSpec.Matches(searchGuitarSpec))
+                    matchingGuitars.Add(guitar);
             }
             return matchingGuitars;
         }

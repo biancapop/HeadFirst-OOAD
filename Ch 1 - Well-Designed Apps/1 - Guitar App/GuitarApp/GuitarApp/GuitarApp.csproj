@@ -46,6 +46,7 @@
     <Compile Include="Builder.cs" />
     <Compile Include="FindGuitarTester.cs" />
     <Compile Include="Guitar.cs" />
+    <Compile Include="GuitarSpec.cs" />
     <Compile Include="Inventory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
