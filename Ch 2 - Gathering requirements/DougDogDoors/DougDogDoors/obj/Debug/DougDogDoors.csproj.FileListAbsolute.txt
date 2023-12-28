@@ -1,0 +1,7 @@
+E:\Trabajo\Repos\HeadFirst-OOAD\Ch 2 - Gathering requirements\DougDogDoors\DougDogDoors\obj\Debug\DougDogDoors.csproj.AssemblyReference.cache
+E:\Trabajo\Repos\HeadFirst-OOAD\Ch 2 - Gathering requirements\DougDogDoors\DougDogDoors\obj\Debug\DougDogDoors.csproj.CoreCompileInputs.cache
+E:\Trabajo\Repos\HeadFirst-OOAD\Ch 2 - Gathering requirements\DougDogDoors\DougDogDoors\bin\Debug\DougDogDoors.exe.config
+E:\Trabajo\Repos\HeadFirst-OOAD\Ch 2 - Gathering requirements\DougDogDoors\DougDogDoors\bin\Debug\DougDogDoors.exe
+E:\Trabajo\Repos\HeadFirst-OOAD\Ch 2 - Gathering requirements\DougDogDoors\DougDogDoors\bin\Debug\DougDogDoors.pdb
+E:\Trabajo\Repos\HeadFirst-OOAD\Ch 2 - Gathering requirements\DougDogDoors\DougDogDoors\obj\Debug\DougDogDoors.exe
+E:\Trabajo\Repos\HeadFirst-OOAD\Ch 2 - Gathering requirements\DougDogDoors\DougDogDoors\obj\Debug\DougDogDoors.pdb
